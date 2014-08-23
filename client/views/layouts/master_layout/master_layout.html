@@ -1,0 +1,19 @@
+<template name="MasterLayout">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+      <h1><a href="#">My Site</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li><a href="#">{{> loginButtons}}</a></li>
+      </ul>
+    </section>
+  </nav>
+  {{currentUser.profile.name}}
+  {{> yield}}
+</template>
